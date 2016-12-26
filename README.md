@@ -2,8 +2,10 @@
 
 This repo provides the code to replicate the experiments in the paper
 
-> Xinyun Chen, Chang Liu, Richard Shin, Dawn Song, Mingcheng Chen, <cite> Latent Attention For If-Then Program Synthesis </cite>
+> Xinyun Chen, Chang Liu, Richard Shin, Dawn Song, Mingcheng Chen, <cite> Latent Attention For If-Then Program Synthesis </cite>,
 > in Proc. of NIPS 2016
+
+Papers [arXiv](https://arxiv.org/abs/1611.01867)[NIPS](https://papers.nips.cc/paper/6284-latent-attention-for-if-then-program-synthesis.pdf)
 
 # Prerequisite
 
