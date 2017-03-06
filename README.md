@@ -21,6 +21,14 @@ Tensorflow version >= v0.7
 
 We use the same crawler from [Quirk et al.](http://www.aclweb.org/anthology/P15-1085) to crawl recipes from IFTTT.com.
 
+Processed data can be found in [here](./dataset/IFTTT/msr_data.pkl).
+
+## Zapier
+
+We additional provide a preprocessed dataset derived from [Zapier](https://zapier.com/) recipes crawled using [a crawler](https://github.com/miguelcb84/ewe-scrapers/blob/master/ewescrapers/spiders/zapier_spiders.py).
+
+Processed data can be found under [this folder](./dataset/Zapier/).
+
 # Usage
 
 ## Model architectures
@@ -44,13 +52,13 @@ In the following we list some important arguments in `train.py`:
 * `--output`: name of the file that stores the prediction results (no need to specify the filename extension, the output is a pickle (.pkl) file).
 
 ```bash
-python train.py --dataset [path_to_data] --config configs/model.jsonnet --logdir model --output result
+python train.py --dataset dataset/IFTTT/msr_data.pkl --config configs/model.jsonnet --logdir model --output result
 ```
 
 To ensemble results of several models:
 
 ```bash
-python test_ensemble_probs.py --data [path_to_data] --res result_0.pkl result_1.pkl ... result_N.pkl
+python test_ensemble_probs.py --data dataset/IFTTT/msr_data.pkl --res result_0.pkl result_1.pkl ... result_N.pkl
 ```
 
 # Citation
